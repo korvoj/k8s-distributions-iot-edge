@@ -1,0 +1,20 @@
+test_name, replicas, timestamp, load
+float-operation, 1, 2021-12-16 12:37:53, 2
+float-operation, 2, 2021-12-16 12:43:24, 4
+float-operation, 3, 2021-12-16 12:58:12, 10
+float-operation, 4, 2021-12-16 13:08:30, 14
+float-operation, 5, 2021-12-16 13:13:46, 16
+float-operation, 6, 2021-12-16 13:24:34, 20
+float-operation, 7, 2021-12-16 13:39:07, 26
+float-operation, 8, 2021-12-16 13:48:54, 30
+float-operation, 9, 2021-12-16 13:59:27, 34
+float-operation, 10, 2021-12-16 14:15:16, 40
+float-operation, 9, 2021-12-16 14:43:24, 0
+float-operation, 8, 2021-12-16 14:43:24, 0
+float-operation, 7, 2021-12-16 14:43:24, 0
+float-operation, 6, 2021-12-16 14:43:24, 0
+float-operation, 5, 2021-12-16 14:43:39, 0
+float-operation, 4, 2021-12-16 14:43:39, 0
+float-operation, 3, 2021-12-16 14:43:39, 0
+float-operation, 2, 2021-12-16 14:43:39, 0
+float-operation, 1, 2021-12-16 14:43:40, 0
