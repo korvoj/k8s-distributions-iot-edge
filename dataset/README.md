@@ -18,4 +18,8 @@ The model training benchmark reuses the `reviews10mb.csv` dataset available in t
 
 # `image-processing`
 
-The image processing enchmark reuses the `image.jpg` file available in the original [kmu-bigdata/serverless-faas-workbench](https://github.com/kmu-bigdata/serverless-faas-workbench/blob/master/dataset/image/image.jpg) repository.
+The image processing benchmark reuses the `image.jpg` file available in the original [kmu-bigdata/serverless-faas-workbench](https://github.com/kmu-bigdata/serverless-faas-workbench/blob/master/dataset/image/image.jpg) repository.
+
+# `json-dumps-loads`
+
+The json benchmark uses the large JSON dataset available in the  [json-iterator/test-data](https://raw.githubusercontent.com/json-iterator/test-data/master/large-file.json) repository.
