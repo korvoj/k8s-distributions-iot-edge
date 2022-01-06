@@ -1,0 +1,17 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: <OPENFAAS_GATEWAY>
+functions:
+  gzip-compression:
+    lang: python3-http-debian
+    handler: ./gzip-compression
+    image: <GZIP_COMPRESSION_DOCKER_IMAGE>
+    annotations:
+      com.openfaas.profile: function-anti-affinity
+    environment:
+      read_timeout: 21600s
+      write_timeout: 21600s
+      upstream_timeout: 21600s
+      exec_timeout: 21600s
+      handler_wait_duration: 21600s

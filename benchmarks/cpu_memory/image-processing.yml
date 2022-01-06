@@ -1,0 +1,16 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: <OPENFAAS_GATEWAY>
+functions:
+  image-processing:
+    lang: python3-http-debian
+    handler: ./image-processing
+    image: <IMAGE_PROCESSING_DOCKER_IMAGE>
+    annotations:
+      com.openfaas.profile: function-anti-affinity
+    environment:
+      read_timeout: 21600s
+      write_timeout: 21600s
+      upstream_timeout: 21600s
+      exec_timeout: 21600s

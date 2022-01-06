@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: <OPENFAAS_GATEWAY>
+functions:
+  s3-download-speed:
+    lang: python3-http-debian
+    handler: ./s3-download-speed
+    image: <S3_DOWNLOAD_SPEED_DOCKER_IMAGE>
+    annotations:
+      com.openfaas.profile: function-anti-affinity
+    environment:
+      read_timeout: 21600s
+      write_timeout: 21600s
+      upstream_timeout: 21600s
+      exec_timeout: 21600s
+    build_args:
+      TEST_ENABLED: false

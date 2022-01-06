@@ -1,0 +1,16 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: <OPENFAAS_GATEWAY>
+functions:
+  pyaes:
+    lang: python3-http
+    handler: ./pyaes
+    image: <PYAES_DOCKER_IMAGE>
+    annotations:
+      com.openfaas.profile: function-anti-affinity
+    environment:
+      read_timeout: 3600s
+      write_timeout: 3600s
+      upstream_timeout: 3600s
+      exec_timeout: 3600s

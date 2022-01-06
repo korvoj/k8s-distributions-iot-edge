@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: <OPENFAAS_GATEWAY>
+functions:
+  float-operation:
+    annotations:
+      com.openfaas.profile: function-anti-affinity
+    lang: python3-http
+    handler: ./float-operation
+    image: <FLOAT_OPERATION_DOCKER_IMAGE>
+    requests:
+      cpu: 350m
+    environment:
+      read_timeout: 3600s
+      write_timeout: 3600s
+      upstream_timeout: 3600s
+      exec_timeout: 3600s

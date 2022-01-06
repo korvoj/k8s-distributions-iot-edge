@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: <OPENFAAS_GATEWAY>
+functions:
+  video-processing:
+    lang: python3-http-debian
+    handler: ./video-processing
+    image: <VIDEO_PROCESSING_DOCKER_IMAGE>
+    annotations:
+      com.openfaas.profile: function-anti-affinity
+    environment:
+      read_timeout: 3600s
+      write_timeout: 3600s
+      upstream_timeout: 3600s
+      exec_timeout: 3600s
+    build_args:
+      ADDITIONAL_PACKAGE: ffmpeg libsm6 libxext6
