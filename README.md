@@ -6,7 +6,7 @@ Both the source code and raw data results are available.
 
 The `scripts` directory contains the shell scripts used to automate the tests. The [hey](https://github.com/rakyll/hey) tool is used for all benchmarks. To measure the number of active containers at a given point in time, a custom Python script is provided titled `pod_num_replicas.py`. Before running this script ensure that an appropriate `~/.kube/config` exists with valid credentials to access a given Kubernetes cluster.
 
-The `data` directory contains the output CSV files for each tested Kubernetes distribution. Each CSV files has the following columns (description taken from [hey pull request #126](https://github.com/rakyll/hey/pull/126/files):
+The `data` directory contains the output CSV files for each tested Kubernetes distribution. Each CSV files has the following columns (description taken from [hey pull request #126](https://github.com/rakyll/hey/pull/126/files)):
 
 - `response-time` - Total time taken for request (in seconds)
 - `DNS+dialup` - Time taken to establish the TCP connection (in seconds)

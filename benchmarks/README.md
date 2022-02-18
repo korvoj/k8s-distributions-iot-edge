@@ -58,6 +58,7 @@ Once all of the required parameters outlined above have been replaced with their
 ```bash
 export OPENFAAS_URL='<OPENFAAS_GATEWAY>'
 faas-cli login --password <OPENFAAS_PASSWORD>
+faas-cli up -f <FUNCTION_MANIFEST>.yml --gateway <OPENFAAS_GATEWAY>
 ```
 
 The source files with which the functions have been invoked during our tests are available in the folder `dataset` in the root of the repository.

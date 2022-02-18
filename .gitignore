@@ -1,5 +1,6 @@
 .idea
 k8s-test.ipynb
+k8s-distributions-iot-edge-internal.ipynb
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
