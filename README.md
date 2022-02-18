@@ -1,6 +1,6 @@
 # Kubernetes Distributions for the Edge: A Serverless Outlook
 
-This repository contains complementary data for the paper titled Kubernetes Distributions for the Edge: A Serverless Outlook.
+This repository contains complementary data for the paper titled Kubernetes Distributions for the Edge: Serverless Performance Evaluation.
 
 Both the source code and raw data results are available.
 
