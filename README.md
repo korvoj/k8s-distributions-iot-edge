@@ -1,4 +1,4 @@
-# Kubernetes Distributions for the Edge: A Serverless Outlook
+# Kubernetes Distributions for the Edge: Serverless Performance Evaluation
 
 This repository contains complementary data for the paper titled Kubernetes Distributions for the Edge: Serverless Performance Evaluation.
 
