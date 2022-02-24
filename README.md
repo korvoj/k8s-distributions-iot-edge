@@ -4,6 +4,12 @@ This repository contains complementary data for the paper titled Kubernetes Dist
 
 Both the source code and raw data results are available.
 
+The tests have been adapted from the FunctionBench benchmarking suite, available on [kmu-bigdata/serverless-faas-workbench](https://github.com/kmu-bigdata/serverless-faas-workbench) and described in:
+
+- _Jeongchul Kim and Kyungyong Lee, 'Function Bench : A Suite of Workloads for Serverless Cloud Function Service',
+  IEEE International Conference on Cloud Computing 2019, 07/2019 [pdf](https://kimjeongchul.github.io/assets/paper/FunctionBench%20-%20A%20Suite%20of%20Workloads%20for%20Serverless%20Cloud%20Function%20Service.pdf)_
+- _Jeongchul Kim and Kyungyong Lee, 'Practical Cloud Workloads for Serverless FaaS, ACM Symposium on Cloud Computing 2019, 11/2019_ [pdf](https://dl.acm.org/citation.cfm?id=3365439)
+
 The `scripts` directory contains the shell scripts used to automate the tests. The [hey](https://github.com/rakyll/hey) tool is used for all benchmarks. To measure the number of active containers at a given point in time, a custom Python script is provided titled `pod_num_replicas.py`. Before running this script ensure that an appropriate `~/.kube/config` exists with valid credentials to access a given Kubernetes cluster.
 
 The `data` directory contains the output CSV files for each tested Kubernetes distribution. Each CSV files has the following columns (description taken from [hey pull request #126](https://github.com/rakyll/hey/pull/126/files)):
