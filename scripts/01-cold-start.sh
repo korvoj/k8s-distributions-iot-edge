@@ -16,7 +16,7 @@ do
     sleep 10 # allowing the container to terminate completely
     if [ -f "$test_type-cold-start.csv" ]; then # results file exists
      if [ $test_type == "linpack" ]; then
-       hey -n 1 -c 1 -t 0 -o csv -m GET "https://$OPENFAAS_URL/function/$test_type?number=5000&uuid=$(uuidgen)&start_time=$(date +%s)" | tail -n +2 >> $test_type-cold-start.csv
+       hey -n 1 -c 1 -t 0 -o csv -m GET "$OPENFAAS_URL/function/$test_type?number=5000&uuid=$(uuidgen)&start_time=$(date +%s)" | tail -n +2 >> $test_type-cold-start.csv
      elif [ $test_type == "chameleon" ]; then
        hey -n 1 -c 1 -t 0 -o csv -m GET "$OPENFAAS_URL/function/$test_type?num_of_rows=2000&num_of_cols=2000&uuid=$(uuidgen)&start_time=$(date +%s)" | tail -n +2 >> $test_type-cold-start.csv
      elif [ $test_type == "matmul" ]; then
