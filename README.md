@@ -1,6 +1,8 @@
 # Kubernetes Distributions for the Edge: Serverless Performance Evaluation
 
-This repository contains complementary data for the paper titled Kubernetes Distributions for the Edge: Serverless Performance Evaluation.
+
+
+This repository contains complementary data for the paper titled Kubernetes Distributions for the Edge: Serverless Performance Evaluation (*Kjorveziroski, V., Filiposka, S. Kubernetes distributions for the edge: serverless performance evaluation. J Supercomput (2022). https://doi.org/10.1007/s11227-022-04430-6*).
 
 Both the source code and raw data results are available.
 
